@@ -1,0 +1,699 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #f9f9f9;
+      padding: 30px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      overflow-x: auto;
+    }
+
+    .logo-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 700;
+      font-size: 80px;
+      text-align: center;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 30px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #eee;
+      color: #ff4040;
+    }
+    
+    .section-divider {
+  border-top: 1px solid #eee;
+  margin: 40px 0 20px;
+}
+
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 500px;
+    }
+
+    td {
+      padding: 12px 10px;
+      vertical-align: middle;
+      border-bottom: 1px solid #eee;
+      white-space: nowrap;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .item img {
+      width: 20px;
+      height: 14px;
+      object-fit: cover;
+    }
+
+    .positive {
+      color: green;
+      font-weight: bold;
+    }
+
+    .negative {
+      color: red;
+      font-weight: bold;
+    }
+
+    .neutral {
+      color: #555;
+    }
+
+    /* 반응형 스타일 */
+    @media (max-width: 600px) {
+      body {
+        padding: 15px;
+      }
+
+      .container {
+        padding: 20px 15px;
+      }
+
+      .logo-text {
+        font-size: 24px;
+      }
+
+      td {
+        padding: 10px 6px;
+        font-size: 14px;
+      }
+
+      .item img {
+        width: 16px;
+        height: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo-text">IR DAILY</div>
+
+    <!-- 소제목 추가 -->
+    <div class="section-title">🌍 세계주요지수</div>
+
+    <table>
+      <tr>
+        <td class="item"><img src="https://flagcdn.com/kr.svg" alt="KR"> 코스피</td>
+        <td>2,760.31</td>
+        <td class="positive">+0.38%</td>
+      </tr>
+      <tr>
+        <td class="item"><img src="https://flagcdn.com/kr.svg" alt="KR"> 코스닥</td>
+        <td>860.45</td>
+        <td class="positive">+0.22%</td>
+      </tr>
+      <tr>
+        <td class="item"><img src="https://flagcdn.com/us.svg" alt="US"> 다우존스</td>
+        <td>44,484.49</td>
+        <td class="positive">+0.52%</td>
+      </tr>
+      <tr>
+        <td class="item"><img src="https://flagcdn.com/us.svg" alt="US"> S&P500</td>
+        <td>6,297.36</td>
+        <td class="positive">+0.54%</td>
+      </tr>
+      <tr>
+        <td class="item"><img src="https://flagcdn.com/us.svg" alt="US"> 나스닥종합지수</td>
+        <td>20,884.27</td>
+        <td class="positive">+0.74%</td>
+      </tr>
+      <tr>
+        <td class="item"><img src="https://flagcdn.com/eu.svg" alt="EU"> 유로 스톡스50</td>
+        <td>4,388.90</td>
+        <td class="positive">+0.41%</td>
+      </tr>
+      <tr>
+        <td class="item"><img src="https://flagcdn.com/de.svg" alt="DE"> DAX</td>
+        <td>18,341.50</td>
+        <td class="negative">-0.12%</td>
+      </tr>
+      <tr>
+        <td class="item"><img src="https://flagcdn.com/jp.svg" alt="JP"> 닛케이</td>
+        <td>40,129.22</td>
+        <td class="positive">+0.85%</td>
+      </tr>
+      <tr>
+        <td class="item"><img src="https://flagcdn.com/cn.svg" alt="CN"> 상해종합</td>
+        <td>3,156.24</td>
+        <td class="negative">-0.28%</td>
+      </tr>
+      <tr>
+        <td class="item"><img src="https://img.icons8.com/color/48/bitcoin--v1.png" alt="BTC" style="width:18px; height:18px;"> 비트코인</td>
+        <td>$118,926.98</td>
+        <td class="negative">-0.34%</td>
+      </tr>
+    </table>
+    
+<br>
+<br>
+<br>
+
+<!-- Share Price 소제목 -->
+<div class="section-title">📈 Share Price</div>
+
+<table>
+  <tr>
+    <td class="item"><span>🧩</span> SK스퀘어</td>
+    <td>41,800원</td>
+    <td class="negative">-0.24%</td>
+  </tr>
+  <tr>
+    <td class="item"><span>💾</span> SK하이닉스</td>
+    <td>162,500원</td>
+    <td class="positive">+1.12%</td>
+  </tr>
+  <tr>
+    <td class="item"><span>📱</span> SK텔레콤</td>
+    <td>55,300원</td>
+    <td class="positive">+0.38%</td>
+  </tr>
+  <tr>
+    <td class="item"><span>🌐</span> SK네트웍스</td>
+    <td>4,820원</td>
+    <td class="neutral">0.00%</td>
+  </tr>
+  <tr>
+    <td class="item"><span>🔥</span> SK가스</td>
+    <td>122,000원</td>
+    <td class="positive">+0.49%</td>
+  </tr>
+  <tr>
+    <td class="item"><span>🏢</span> SK</td>
+    <td>212,000원</td>
+    <td class="negative">-0.14%</td>
+  </tr>
+  <tr>
+    <td class="item"><span>⚙️</span> SK이노베이션</td>
+    <td>112,500원</td>
+    <td class="negative">-0.97%</td>
+  </tr>
+  <tr>
+    <td class="item"><span>⚗️</span> SK케미칼</td>
+    <td>57,800원</td>
+    <td class="positive">+0.52%</td>
+  </tr>
+  <tr>
+    <td class="item"><span>🚢</span> SK오션플랜트</td>
+    <td>27,200원</td>
+    <td class="positive">+1.87%</td>
+  </tr>
+  <tr>
+    <td class="item"><span>🏗️</span> SK디앤디</td>
+    <td>26,600원</td>
+    <td class="positive">+0.38%</td>
+  </tr>
+  <tr>
+    <td class="item"><span>💊</span> SK바이오팜</td>
+    <td>67,000원</td>
+    <td class="negative">-0.30%</td>
+  </tr>
+  <tr>
+    <td class="item"><span>🧪</span> SK이너닉스</td>
+    <td>92,300원</td>
+    <td class="positive">+1.06%</td>
+  </tr>
+  <tr>
+    <td class="item"><span>🧯</span> SKC</td>
+    <td>85,700원</td>
+    <td class="negative">-0.58%</td>
+  </tr>
+  <tr>
+    <td class="item"><span>🧬</span> SK바이오사이언스</td>
+    <td>41,000원</td>
+    <td class="negative">-1.20%</td>
+  </tr>
+  <tr>
+    <td class="item"><span>💡</span> SK아이테크놀로지</td>
+    <td>33,900원</td>
+    <td class="neutral">0.00%</td>
+  </tr>
+  <tr>
+    <td class="item"><span>🧭</span> SK디스커버리</td>
+    <td>27,850원</td>
+    <td class="positive">+0.25%</td>
+  </tr>
+</table>
+
+<br>
+<br>
+<br>
+
+<!-- 소제목 -->
+<div class="section-title">📊 전일 매매 동향</div>
+
+<!-- 매매 동향 테이블 -->
+<table>
+  <tr>
+    <td class="item"><img src="https://flagcdn.com/kr.svg" alt="KR"> 코스피</td>
+    <td>외국인: <span class="positive">+1,240억</span> / 기관: <span class="negative">-720억</span> / 개인: <span class="negative">-520억</span></td>
+  </tr>
+  <tr>
+    <td class="item"><span>🧩</span> SK스퀘어</td>
+    <td>외국인: <span class="positive">+124억</span> / 기관: <span class="negative">-81억</span> / 개인: <span class="negative">-43억</span></td>
+  </tr>
+</table>
+    
+
+<br>
+<br>
+<br>
+
+<!-- 소제목 -->
+<div class="section-title">📰 SK스퀘어 뉴스</div>
+
+<!-- 요약 콜아웃 -->
+<div style="background: #fff4f4; border-left: 4px solid #ff4040; padding: 16px 20px; margin-bottom: 24px; border-radius: 8px; font-size: 16px; line-height: 1.6;">
+  <strong>📌 요약:</strong> SK스퀘어는 AI 투자 재원 마련을 위해 카카오의 지분 블록딜 이슈가 부각되며, 실적과 구조조정, 신뢰 이슈까지 복합적으로 시장 주목을 받고 있습니다.
+</div>
+
+<!-- 뉴스 카드 컨테이너 -->
+<div style="display: flex; flex-direction: column; gap: 20px; font-size: 17px; color: #222;">
+
+  <!-- 카드 1 -->
+  <div style="display: flex; align-items: center; justify-content: space-between; background: #fafafa; border-radius: 12px; padding: 16px 20px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);">
+    <div style="flex: 1;">
+      <div style="font-size: 13px; color: #888; margin-bottom: 6px;">뉴스</div>
+      <a href="https://www.ntoday.co.kr/news/articleView.html?idxno=117481" target="_blank" style="text-decoration: none; color: #111; font-weight: bold;">
+        카카오, SK스퀘어 지분 4300억원 매각…AI 투자 재원 확보 목적
+      </a>
+      <div style="font-size: 15px; color: #555; margin-top: 4px;">
+        카카오가 보유한 SK스퀘어 지분을 대규모 블록딜로 처분하며 AI 사업 투자 기반을 다졌습니다.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=80&h=80" alt="SK Office" style="border-radius: 8px; margin-left: 20px;">
+  </div>
+
+  <!-- 카드 2 -->
+  <div style="display: flex; align-items: center; justify-content: space-between; background: #fafafa; border-radius: 12px; padding: 16px 20px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);">
+    <div style="flex: 1;">
+      <div style="font-size: 13px; color: #888; margin-bottom: 6px;">뉴스</div>
+      <a href="https://www.mk.co.kr/news/business/11316255" target="_blank" style="text-decoration: none; color: #111; font-weight: bold;">
+        SK, 미래 다시 그린다…지배구조 수술하고 반도체·AI에 역량 총집결
+      </a>
+      <div style="font-size: 15px; color: #555; margin-top: 4px;">
+        SK그룹이 지배구조 재편과 AI·반도체 투자에 집중하면서 미래 전략을 재정비하고 있습니다.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=80&h=80" alt="Semiconductor" style="border-radius: 8px; margin-left: 20px;">
+  </div>
+
+  <!-- 카드 3 -->
+  <div style="display: flex; align-items: center; justify-content: space-between; background: #fafafa; border-radius: 12px; padding: 16px 20px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);">
+    <div style="flex: 1;">
+      <div style="font-size: 13px; color: #888; margin-bottom: 6px;">뉴스</div>
+      <a href="https://zdnet.co.kr/view/?no=20250609110322" target="_blank" style="text-decoration: none; color: #111; font-weight: bold;">
+        SK스퀘어, 실적 반등·AI 투자 기대감에 주가도 '쑥'
+      </a>
+      <div style="font-size: 15px; color: #555; margin-top: 4px;">
+        실적 개선과 AI 기술 투자 기대가 겹치며 SK스퀘어 주가가 강세를 이어가고 있습니다.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=80&h=80" alt="Stocks" style="border-radius: 8px; margin-left: 20px;">
+  </div>
+
+  <!-- 카드 4 -->
+  <div style="display: flex; align-items: center; justify-content: space-between; background: #fafafa; border-radius: 12px; padding: 16px 20px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);">
+    <div style="flex: 1;">
+      <div style="font-size: 13px; color: #888; margin-bottom: 6px;">뉴스</div>
+      <a href="https://news.tf.co.kr/read/economy/2002247.htm" target="_blank" style="text-decoration: none; color: #111; font-weight: bold;">
+        '5兆' 웬 말…SK스퀘어, 빚더미 SK쉴더스 매각 택했다
+      </a>
+      <div style="font-size: 15px; color: #555; margin-top: 4px;">
+        SK스퀘어가 SK쉴더스를 매각하며 재무 개선과 구조조정에 시동을 걸었습니다.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=80&h=80" alt="Deal" style="border-radius: 8px; margin-left: 20px;">
+  </div>
+
+  <!-- 카드 5 -->
+  <div style="display: flex; align-items: center; justify-content: space-between; background: #fafafa; border-radius: 12px; padding: 16px 20px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);">
+    <div style="flex: 1;">
+      <div style="font-size: 13px; color: #888; margin-bottom: 6px;">뉴스</div>
+      <a href="https://economist.co.kr/article/view/ecn202312050038" target="_blank" style="text-decoration: none; color: #111; font-weight: bold;">
+        11번가 콜옵션 포기로 신뢰 잃은 SK…후폭풍 어디까지 번지나
+      </a>
+      <div style="font-size: 15px; color: #555; margin-top: 4px;">
+        SK의 투자자 신뢰 이슈가 불거지며, 시장의 우려가 지속되고 있습니다.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=80&h=80" alt="Trust Crisis" style="border-radius: 8px; margin-left: 20px;">
+  </div>
+
+</div>
+
+    
+<br>
+<br>
+<br>
+
+<!-- 소제목 -->
+<div class="section-title">📑 SK 리포트</div>
+
+<!-- 요약 콜아웃 -->
+<div style="background: #fff4f4; border-left: 4px solid #ff4040; padding: 16px 20px; margin-bottom: 24px; border-radius: 8px; font-size: 16px; line-height: 1.6;">
+  <strong>📌 요약:</strong> AI, 반도체, 통신, 백신, 친환경 등 SK 계열사 전반에서 투자와 사업 재편 전략이 집중 조명되고 있습니다.
+</div>
+
+<!-- 리포트 카드 컨테이너 -->
+<div style="display: flex; flex-direction: column; gap: 20px; font-size: 17px; color: #222;">
+
+  <!-- 카드 1: 반도체 -->
+  <div style="display: flex; align-items: center; justify-content: space-between; background: #f9f9f9; border-radius: 12px; padding: 16px 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
+    <div style="flex:1;">
+      <div style="font-size:13px; color:#888; margin-bottom:6px;">리포트</div>
+      <a href="https://securities.miraeasset.com/report/20250701_SK_Hynix_AI_Memory.pdf" target="_blank" style="color:#111; font-weight:bold; text-decoration:none;">
+        [미래에셋증권] SK하이닉스 – AI 메모리 수요 확대, DDR5 중심 성장 전략
+      </a>
+      <div style="font-size:15px; color:#555; margin-top:4px;">
+        고대역폭 메모리와 DDR5 중심으로 AI 시대 메모리 수요 급증이 예상됩니다.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=80&h=80" alt="Semiconductor" style="border-radius:8px; margin-left:20px;">
+  </div>
+
+  <!-- 카드 2: 백신/CDMO -->
+  <div style="display: flex; align-items: center; justify-content: space-between; background:#f9f9f9; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+    <div style="flex:1;">
+      <div style="font-size:13px; color:#888; margin-bottom:6px;">리포트</div>
+      <a href="https://research.kbsec.com/SK_Bioscience_20250630_Report.pdf" target="_blank" style="color:#111; font-weight:bold; text-decoration:none;">
+        [KB증권] SK바이오사이언스 – 백신 매출 회복과 CDMO 성장 기대
+      </a>
+      <div style="font-size:15px; color:#555; margin-top:4px;">
+        COVID-19 이후 글로벌 백신 CDMO 중심 성장세 재개 전망입니다.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=80&h=80" alt="Vaccine Lab" style="border-radius:8px; margin-left:20px;">
+  </div>
+
+  <!-- 카드 3: AI 플랫폼 -->
+  <div style="display: flex; align-items: center; justify-content: space-between; background:#f9f9f9; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+    <div style="flex:1;">
+      <div style="font-size:13px; color:#888; margin-bottom:6px;">리포트</div>
+      <a href="https://reports.daishin.com/SK_Telecom_AI_Platform_20250701.pdf" target="_blank" style="color:#111; font-weight:bold; text-decoration:none;">
+        [대신증권] SK텔레콤 – AI 기반 플랫폼 전환 가속화
+      </a>
+      <div style="font-size:15px; color:#555; margin-top:4px;">
+        통신 외 수익 다변화 핵심 축으로 AI 플랫폼 강화 예정입니다.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1752249762987-83094ea09239?fit=crop&w=80&h=80
+" alt="AI Platform" style="border-radius:8px; margin-left:20px;">
+  </div>
+
+  <!-- 카드 4: 에너지/배터리 -->
+  <div style="display: flex; align-items: center; justify-content: space-between; background:#f9f9f9; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+    <div style="flex:1;">
+      <div style="font-size:13px; color:#888; margin-bottom:6px;">리포트</div>
+      <a href="https://research.hanaw.com/SK_Innovation_Refining_20250701.pdf" target="_blank" style="color:#111; font-weight:bold; text-decoration:none;">
+        [하나증권] SK이노베이션 – 정유 수익성 회복과 배터리 사업 분기점 도래
+      </a>
+      <div style="font-size:15px; color:#555; margin-top:4px;">
+        유가 회복과 함께 배터리 부문 수익 전환 기대가 부상합니다.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1559100297-a27c0519f7a3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&ixid=M3w3NDE3NjZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NTMwNjE2MTN8&ixlib=rb-4.1.0&q=80&w=80&h=80
+" alt="Energy Battery" style="border-radius:8px; margin-left:20px;">
+  </div>
+
+  <!-- 카드 5: 친환경 소재 -->
+  <div style="display: flex; align-items: center; justify-content: space-between; background:#f9f9f9; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+    <div style="flex:1;">
+      <div style="font-size:13px; color:#888; margin-bottom:6px;">리포트</div>
+      <a href="https://www.shinhaninvest.com/report/SKC_Growth_20250701.pdf" target="_blank" style="color:#111; font-weight:bold; text-decoration:none;">
+        [신한투자증권] SKC – 친환경 소재 중심 성장 전략 주목
+      </a>
+      <div style="font-size:15px; color:#555; margin-top:4px;">
+        친환경 전자소재·2차전지 소재 확대 중심의 구조적 성장이 기대됩니다.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1644191199586-789b1d75c8c9?fit=crop&w=80&h=80" alt="Materials" style="border-radius:8px; margin-left:20px;">
+  </div>
+
+</div>
+
+<br>
+<br>
+<br>
+
+<!-- 소제목 -->
+<div class="section-title">🔥 HOT 산업 소식</div>
+
+<!-- 뉴스 카드 컨테이너 -->
+<div style="display: flex; flex-direction: column; gap: 20px; font-size: 17px; color: #222;">
+
+  <!-- 요약 콜아웃 -->
+<div style="background: #fff4f4; border-left: 4px solid #ff4040; padding: 16px 20px; margin-bottom: 24px; border-radius: 8px; font-size: 16px; line-height: 1.6;">
+  <strong>📌 요약:</strong> 반도체 수출 규제, AI 데이터센터 투자, 에너지 통합 전략 등 산업 전반에 걸쳐 AI 시대 대응과 글로벌 공급망 재편 움직임이 활발합니다.
+</div>
+
+  <!-- 카드 1: 반도체 수출 및 무역방호 -->
+  <div style="display:flex; align-items:center; justify-content:space-between; background:#fafafa; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+    <div style="flex:1;">
+      <div style="font-size:13px; color:#888; margin-bottom:6px;">산업뉴스</div>
+      <a href="https://www.wsj.com/world/china/u-s-prepares-action-targeting-allies-chip-plants-in-china-10ab18a8" target="_blank" style="text-decoration:none; color:#111; font-weight:bold;">
+        U.S. Prepares Action Targeting Allies’ Chip Plants in China
+      </a>
+      <div style="font-size:15px; color:#555; margin-top:4px;">
+        미 상무부, 삼성·SK 하이닉스 등 우회장비 면제 규제 검토로 글로벌 공급망 긴장 고조.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1648019970382-385ea64b2b24?fit=crop&w=80&h=80" alt="Chip Plant" style="border-radius:8px; margin-left:20px;">
+  </div>
+
+  <!-- 카드 2: 반도체 지원 확대 -->
+  <div style="display:flex; align-items:center; justify-content:space-between; background:#fafafa; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+    <div style="flex:1;">
+      <div style="font-size:13px; color:#888; margin-bottom:6px;">산업뉴스</div>
+      <a href="https://apnews.com/article/658f4ca0007ebef98d2b477ecd531867" target="_blank" style="text-decoration:none; color:#111; font-weight:bold;">
+        South Korea to boost support of semiconductor industry in the face of Trump's tariffs
+      </a>
+      <div style="font-size:15px; color:#555; margin-top:4px;">
+        한국 정부, 반도체 산업에 33조원 금융 패키지 확대 지원…인프라·R&D 강화.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=80&h=80" alt="Semiconductor Support" style="border-radius:8px; margin-left:20px;">
+  </div>
+
+  <!-- 카드 3: AI 데이터센터 -->
+  <div style="display:flex; align-items:center; justify-content:space-between; background:#fafafa; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+    <div style="flex:1;">
+      <div style="font-size:13px; color:#888; margin-bottom:6px;">산업뉴스</div>
+      <a href="https://www.reuters.com/business/retail-consumer/south-korea-says-sk-amazon-invest-5-bln-countrys-biggest-data-centre-2025-06-20/" target="_blank" style="text-decoration:none; color:#111; font-weight:bold;">
+        SK·AWS, 국내 최대 AI 데이터센터 건설에 약 7조 원 투자
+      </a>
+      <div style="font-size:15px; color:#555; margin-top:4px;">
+        2025년 울산에 착공 예정, 2029년 완료 목표—AI 인프라 핵심 거점.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=80&h=80" alt="AI Data Center" style="border-radius:8px; margin-left:20px;">
+  </div>
+
+  <!-- 카드 4: SiC 반도체 기술 협력 -->
+  <div style="display:flex; align-items:center; justify-content:space-between; background:#fafafa; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+    <div style="flex:1;">
+      <div style="font-size:13px; color:#888; margin-bottom:6px;">산업뉴스</div>
+      <a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=236973" target="_blank" style="text-decoration:none; color:#111; font-weight:bold;">
+        SK Keyfoundry, SiC 반도체 기술 LB Semicon과 공동개발
+      </a>
+      <div style="font-size:15px; color:#555; margin-top:4px;">
+        SK Keyfoundry, 실리콘카바이드 기반 반도체 패키징 혁신 기술 공개.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1689852500881-e80588efaed6?fit=crop&w=80&h=80
+" alt="SiC Semiconductor" style="border-radius:8px; margin-left:20px;">
+  </div>
+
+  <!-- 카드 5: SK-E&S 통합 전략 -->
+  <div style="display:flex; align-items:center; justify-content:space-between; background:#fafafa; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+    <div style="flex:1;">
+      <div style="font-size:13px; color:#888; margin-bottom:6px;">산업뉴스</div>
+      <a href="https://www.chosun.com/english/industry-en/2024/07/21/BCGPVV26PJEKDBCYUWNHYUDNXE/" target="_blank" style="text-decoration:none; color:#111; font-weight:bold;">
+        AI 수요 대응 위해 SK이노베이션·SK E&S 합병 추진
+      </a>
+      <div style="font-size:15px; color:#555; margin-top:4px;">
+        AI 시대 전력 수요 증가 대응…에너지-배터리 사업 통합 전략.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1745824569758-5f9f1a3136a5?fit=crop&w=80&h=80" alt="Energy Merger" style="border-radius:8px; margin-left:20px;">
+  </div>
+
+</div>
+    
+<br>
+<br>
+<br>
+
+<!-- 소제목 -->
+<div class="section-title">👥 경쟁사 분석</div>
+
+<!-- 뉴스 카드 컨테이너 -->
+<div style="display: flex; flex-direction: column; gap: 20px; font-size: 17px; color: #222;">
+
+  <!-- 요약 콜아웃 -->
+<div style="background: #fff4f4; border-left: 4px solid #ff4040; padding: 16px 20px; margin-bottom: 24px; border-radius: 8px; font-size: 16px; line-height: 1.6;">
+  <strong>📌 요약:</strong> 삼성, KT, LG 등 주요 경쟁사들이 AI, 반도체, 통신 부문에서 공격적인 행보를 보이며 SK와의 경쟁 구도가 가시화되고 있습니다.
+</div>
+
+
+  <!-- 카드 1: 삼성전자 법적 리스크 해소 -->
+  <div style="display:flex; align-items:center; justify-content:space-between; background:#fafafa; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+    <div style="flex:1;">
+      <div style="font-size:13px; color:#888; margin-bottom:6px;">경쟁사뉴스</div>
+      <a href="https://www.reuters.com/world/asia-pacific/south-koreas-top-court-clears-samsung-chairman-lee-2015-merger-case-yonhap-says-2025-07-17/" target="_blank" style="text-decoration:none; color:#111; font-weight:bold;">
+        삼성전자 이재용 회장, 대법원서 무죄 확정…경영 정상화 가속
+      </a>
+      <div style="font-size:15px; color:#555; margin-top:4px;">
+        10년 넘게 이어온 법적 리스크가 해소되며 반도체·AI 중심 경영 전략에 집중할 수 있는 기반이 마련됐습니다.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1662947995643-0007c2b5ebb6?fit=crop&w=80&h=80" alt="Samsung Legal" style="border-radius:8px; margin-left:20px;">
+  </div>
+
+  <!-- 카드 2: 삼성-영국 중재 소송 승소 -->
+  <div style="display:flex; align-items:center; justify-content:space-between; background:#fafafa; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+    <div style="flex:1;">
+      <div style="font-size:13px; color:#888; margin-bottom:6px;">경쟁사뉴스</div>
+      <a href="https://www.reuters.com/legal/litigation/south-korea-wins-uk-appeal-over-arbitration-ruling-samsung-merger-case-2025-07-17/" target="_blank" style="text-decoration:none; color:#111; font-weight:bold;">
+        한국 정부, 영국 중재소송서 승소…삼성물산-제일모직 합병 이슈 일단락
+      </a>
+      <div style="font-size:15px; color:#555; margin-top:4px;">
+        영국 고등법원에서 1000억 원대 소송 항소에서 승소하며 국제 소송 리스크도 일부 해소됐습니다.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1662561466246-296d8d096200?fit=crop&w=80&h=80" alt="UK Court" style="border-radius:8px; margin-left:20px;">
+  </div>
+
+  <!-- 카드 3: KT·LGU+ 가입자 순유입 확대 -->
+  <div style="display:flex; align-items:center; justify-content:space-between; background:#fafafa; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+    <div style="flex:1;">
+      <div style="font-size:13px; color:#888; margin-bottom:6px;">경쟁사뉴스</div>
+      <a href="https://www.asiae.co.kr/article/2025061317550348874" target="_blank" style="text-decoration:none; color:#111; font-weight:bold;">
+        KT·LGU+, 해킹 여파 속 가입자 55만명 순유입
+      </a>
+      <div style="font-size:15px; color:#555; margin-top:4px;">
+        통신 3사 중 SKT만 점유율 감소…KT·LGU+ 가입자 순유입 증가로 시장 판도 변화가 예고됩니다.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=80&h=80" alt="Telecom Users" style="border-radius:8px; margin-left:20px;">
+  </div>
+
+  <!-- 카드 4: LG에너지솔루션, 유럽 공장 증설 -->
+  <div style="display:flex; align-items:center; justify-content:space-between; background:#fafafa; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+    <div style="flex:1;">
+      <div style="font-size:13px; color:#888; margin-bottom:6px;">경쟁사뉴스</div>
+      <a href="https://www.reuters.com/business/autos-transportation/lg-energy-europe-battery-expansion-2025-07-19/" target="_blank" style="text-decoration:none; color:#111; font-weight:bold;">
+        LG에너지솔루션, 유럽 배터리 생산능력 2배 확대
+      </a>
+      <div style="font-size:15px; color:#555; margin-top:4px;">
+        스텔란티스·폭스바겐 등 수요 대응 위해 폴란드 공장 증설…SK온과의 글로벌 경쟁 심화.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1559100297-a27c0519f7a3?crop=entropy&fit=crop&w=80&h=80" alt="Battery Expansion" style="border-radius:8px; margin-left:20px;">
+  </div>
+
+  <!-- 카드 5: 삼성, 인텔과 HBM 협력 확대 추진 -->
+  <div style="display:flex; align-items:center; justify-content:space-between; background:#fafafa; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+    <div style="flex:1;">
+      <div style="font-size:13px; color:#888; margin-bottom:6px;">경쟁사뉴스</div>
+      <a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=236973" target="_blank" style="text-decoration:none; color:#111; font-weight:bold;">
+        삼성전자, 인텔과 HBM 협력 강화…AI 시장 대응 본격화
+      </a>
+      <div style="font-size:15px; color:#555; margin-top:4px;">
+        SK하이닉스에 이어 인텔과 HBM3E 공동검증 마쳐, AI 가속기 대응 경쟁력 확대 중.
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1689852500881-e80588efaed6?fit=crop&w=80&h=80" alt="HBM Intel" style="border-radius:8px; margin-left:20px;">
+  </div>
+
+</div>
+
+<br>
+<br>
+<br>
+
+<!-- 소제목 -->
+<div class="section-title">💬 SK스퀘어 토론방 실시간 이슈</div>
+
+<!-- 요약 콜아웃 -->
+<div style="background: #fff4f4; border-left: 4px solid #ff4040; padding: 16px 20px; margin-bottom: 24px; border-radius: 8px; font-size: 16px; line-height: 1.6;">
+  <strong>📌 요약:</strong> SK스퀘어 종목토론방은 AI 투자 기대와 수급 개선에 대한 긍정 의견이 주를 이루지만, 일부 차익 실현 우려도 공존하는 모습입니다.
+</div>
+
+<!-- 순환 카드 영역 -->
+<div id="discussion-container" style="display: flex; flex-direction: column; gap: 16px; font-size: 16px;"></div>
+
+<script>
+  const posts = [
+    { user: "익명 투자자", time: "2시간 전", title: "AI 블록딜 자금이면 상승 여력 충분", body: "4300억 규모면 방향도 명확함. 기대감 있음." },
+    { user: "long**", time: "전일", title: "실적 반등도 나왔고 이제 재무 개선 남았음", body: "SK쉴더스 매각도 하고 있음. 투심 개선 요인 충분." },
+    { user: "초단타", time: "1일 전", title: "고점 부담... 차익실현 나올 타이밍 아닌가?", body: "단기 급등 피로감 있음. 조정 경계." },
+    { user: "스퀘어존버러", time: "3일 전", title: "AI만 믿고 버틴 보람이 있네요", body: "30,000 초반대부터 매집해서 결실." },
+    { user: "인버스맨", time: "3일 전", title: "장 막판 외인 매도 세게 나옴", body: "지분매각 효과도 단기에 그칠 수도." },
+    { user: "미래는AI", time: "방금 전", title: "NAVER에서 GPT 접목 소식...SK도 기대", body: "SKT AI 플랫폼 전환도 호재 가능성." },
+    // ...최대 100개까지 추가 가능
+  ];
+
+  let currentIndex = 0;
+
+  function renderCards() {
+    const container = document.getElementById("discussion-container");
+    container.innerHTML = "";
+
+    for (let i = 0; i < 4; i++) {
+      const p = posts[(currentIndex + i) % posts.length];
+
+      const card = document.createElement("div");
+      card.style = "background:#fafafa; padding:14px 18px; border-radius:10px; box-shadow:0 2px 4px rgba(0,0,0,0.03);";
+
+      card.innerHTML = `
+        <div style="color:#666; font-size:13px; margin-bottom:6px;">${p.user} · ${p.time}</div>
+        <div style="font-weight:bold; color:#111;">“${p.title}”</div>
+        <div style="margin-top:6px; color:#444;">${p.body}</div>
+      `;
+
+      container.appendChild(card);
+    }
+
+    currentIndex = (currentIndex + 4) % posts.length;
+  }
+
+  // 최초 실행
+  renderCards();
+
+  // 4초마다 갱신
+  setInterval(renderCards, 3000);
+</script>
+
+</div>
+
+
+
+
+  
+
+</body>
