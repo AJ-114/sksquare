@@ -19,6 +19,8 @@
       overflow-x: auto;
     }
 
+    
+
     .logo-text {
       font-family: 'Cormorant Garamond', serif;
       font-weight: 700;
@@ -106,7 +108,45 @@
         height: 12px;
       }
     }
+    
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  font-size: 14px;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card .item {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.positive {
+  color: #d73027;
+  font-weight: 600;
+}
+.negative {
+  color: #1a9850;
+  font-weight: 600;
+}
+
+
+    
   </style>
+  
 </head>
 <body>
 
@@ -138,8 +178,11 @@ SK그룹 전반은 반도체·AI·에너지 중심으로 사업 포트폴리오 
 <br>
 <br>
   • <strong>AI 반도체 호황 지속:</strong> 엔비디아·AMD의 강세는 고성능 메모리 수요 기대를 반영하며, SK하이닉스의 HBM3E 공급 확대에 긍정적입니다.<br>
+  <br>
   • <strong>통신주 및 인프라 투자 확대 기대:</strong> AI 인프라 확대 수요에 따라 SK텔레콤의 데이터센터·클라우드 사업 및 플랫폼 전략 강화에 기회 요인이 있습니다.<br>
+  <br>
   • <strong>환율 안정 및 금리 동결:</strong> 연준의 동결 기조는 원화 강세 압력 완화와 함께 외국인 자금 유입 환경 개선으로 이어질 수 있어 SK스퀘어 등 외국인 순매수 종목에 우호적입니다.<br>
+  <br>
   • <strong>실적 변수:</strong> 일부 미국 경기지표 부진은 하반기 수출 기업 전반의 실적 모멘텀에 불확실성을 줄 수 있으며, SK이노베이션·SKC 등에도 영향을 미칠 가능성 존재.
 
 </div>
@@ -208,6 +251,38 @@ SK그룹 전반은 반도체·AI·에너지 중심으로 사업 포트폴리오 
         <td>5,253.81</td>
         <td class="positive">+1.21%</td>
       </tr>
+      
+      <!-- ✅ 추가된 메모리 가격 지표 -->
+  <tr>
+    <td class="item"><img src="https://img.icons8.com/windows/32/memory-slot.png" alt="DRAM" style="width:18px; height:18px;"> DDR4 8Gb</td>
+    <td>$2.10</td>
+    <td class="positive">+27.3%</td>
+  </tr>
+  <tr>
+    <td class="item"><img src="https://img.icons8.com/ios-filled/50/ssd.png" alt="NAND" style="width:18px; height:18px;"> NAND 128Gb</td>
+    <td>$4.50</td>
+    <td class="positive">+12.5%</td>
+  </tr>
+  <tr>
+    <td class="item"><img src="https://flagcdn.com/us.svg" alt="USD"> 원/달러 환율</td>
+    <td>₩1,450.32</td>
+    <td class="neutral">–</td>
+  </tr>
+  <tr>
+    <td class="item">🛢️ WTI (원유)</td>
+    <td>$67.30</td>
+    <td class="positive">+0.70%</td>
+  </tr>
+  <tr>
+    <td class="item">🥇 금 (Gold)</td>
+    <td>$3,352.19</td>
+    <td class="neutral">–</td>
+  </tr>
+  <tr>
+    <td class="item">🥈 구리 (Copper)</td>
+    <td>$5.63</td>
+    <td class="negative">-0.12%</td>
+  </tr>
 
     </table>
     
@@ -304,6 +379,78 @@ SK그룹 전반은 반도체·AI·에너지 중심으로 사업 포트폴리오 
 <br>
 <br>
 <br>
+    
+<!-- 소제목 -->
+<div class="section-title">📊 지분율 현황</div>
+
+<!-- 지분율 표 형태로 변경 -->
+<style>
+  table.equity-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 14px;
+  }
+  table.equity-table th, table.equity-table td {
+    padding: 10px;
+    border: 1px solid #eee;
+    text-align: left;
+  }
+  table.equity-table th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+  }
+  .positive {
+    color: #d73027;
+    font-weight: 600;
+  }
+  .neutral {
+    color: #666;
+  }
+  .negative {
+    color: #1a9850;
+    font-weight: 600;
+  }
+</style>
+
+<table class="equity-table">
+  <thead>
+    <tr>
+      <th>종목</th>
+      <th>외국인 지분율</th>
+      <th>최대주주</th>
+      <th>공시제외</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>🧩 SK스퀘어</td><td class="positive">23.4% (▲0.5%)</td><td>30.0%</td><td>15.6%</td></tr>
+    <tr><td>💾 SK하이닉스</td><td class="positive">49.7% (▲1.3%)</td><td>20.1%</td><td>10.5%</td></tr>
+    <tr><td>📱 SK텔레콤</td><td class="positive">45.2% (▲0.7%)</td><td>30.0%</td><td>12.3%</td></tr>
+    <tr><td>🌐 SK네트웍스</td><td class="positive">15.1% (▲0.2%)</td><td>39.1%</td><td>11.0%</td></tr>
+    <tr><td>🔥 SK가스</td><td class="positive">19.3% (▲0.4%)</td><td>20.1%</td><td>7.5%</td></tr>
+    <tr><td>🏢 SK</td><td class="positive">33.2% (▲0.8%)</td><td>30.8%</td><td>14.7%</td></tr>
+    <tr><td>⚙️ SK이노베이션</td><td class="positive">31.8% (▲1.0%)</td><td>33.4%</td><td>9.8%</td></tr>
+    <tr><td>⚗️ SK케미칼</td><td class="positive">24.6% (▲0.3%)</td><td>30.0%</td><td>6.2%</td></tr>
+    <tr><td>🚢 SK오션플랜트</td><td class="positive">6.4% (▲0.1%)</td><td>31.0%</td><td>4.2%</td></tr>
+    <tr><td>🏗️ SK디앤디</td><td class="positive">11.7% (▲0.6%)</td><td>30.2%</td><td>5.9%</td></tr>
+    <tr><td>💊 SK바이오팜</td><td class="positive">9.9% (▲0.3%)</td><td>75.0%</td><td>3.8%</td></tr>
+    <tr><td>🧪 SK이너닉스</td><td class="positive">22.7% (▲0.9%)</td><td>40.2%</td><td>8.9%</td></tr>
+    <tr><td>🧯 SKC</td><td class="positive">17.2% (▲0.6%)</td><td>27.4%</td><td>7.3%</td></tr>
+    <tr><td>🧬 SK바이오사이언스</td><td class="positive">13.5% (▲0.3%)</td><td>68.4%</td><td>5.7%</td></tr>
+    <tr><td>💡 SK아이테크놀로지</td><td class="positive">27.6% (▲0.8%)</td><td>61.2%</td><td>6.1%</td></tr>
+    <tr><td>🧭 SK디스커버리</td><td class="positive">8.3% (▲0.2%)</td><td>29.2%</td><td>4.6%</td></tr>
+  </tbody>
+</table>
+
+    
+<!-- 소제목 -->
+<!-- 소제목 -->
+
+<br>
+<br>
+<br>
+
+    
 
 <!-- 소제목 -->
 <div class="section-title">📊 전일 매매 동향</div>
@@ -324,6 +471,7 @@ SK그룹 전반은 반도체·AI·에너지 중심으로 사업 포트폴리오 
 <br>
 <br>
 <br>
+
 
 <!-- 소제목 -->
 <div class="section-title">📰 SK스퀘어 뉴스</div>
@@ -378,33 +526,7 @@ SK그룹 전반은 반도체·AI·에너지 중심으로 사업 포트폴리오 
     <img src="https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=80&h=80" alt="Stocks" style="border-radius: 8px; margin-left: 20px;">
   </div>
 
-  <!-- 카드 4 -->
-  <div style="display: flex; align-items: center; justify-content: space-between; background: #fafafa; border-radius: 12px; padding: 16px 20px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);">
-    <div style="flex: 1;">
-      <div style="font-size: 13px; color: #888; margin-bottom: 6px;">뉴스</div>
-      <a href="https://news.tf.co.kr/read/economy/2002247.htm" target="_blank" style="text-decoration: none; color: #111; font-weight: bold;">
-        '5兆' 웬 말…SK스퀘어, 빚더미 SK쉴더스 매각 택했다
-      </a>
-      <div style="font-size: 15px; color: #555; margin-top: 4px;">
-        SK스퀘어가 SK쉴더스를 매각하며 재무 개선과 구조조정에 시동을 걸었습니다.
-      </div>
-    </div>
-    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=80&h=80" alt="Deal" style="border-radius: 8px; margin-left: 20px;">
-  </div>
 
-  <!-- 카드 5 -->
-  <div style="display: flex; align-items: center; justify-content: space-between; background: #fafafa; border-radius: 12px; padding: 16px 20px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);">
-    <div style="flex: 1;">
-      <div style="font-size: 13px; color: #888; margin-bottom: 6px;">뉴스</div>
-      <a href="https://economist.co.kr/article/view/ecn202312050038" target="_blank" style="text-decoration: none; color: #111; font-weight: bold;">
-        11번가 콜옵션 포기로 신뢰 잃은 SK…후폭풍 어디까지 번지나
-      </a>
-      <div style="font-size: 15px; color: #555; margin-top: 4px;">
-        SK의 투자자 신뢰 이슈가 불거지며, 시장의 우려가 지속되고 있습니다.
-      </div>
-    </div>
-    <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=80&h=80" alt="Trust Crisis" style="border-radius: 8px; margin-left: 20px;">
-  </div>
 
 </div>
 
@@ -467,35 +589,6 @@ SK그룹 전반은 반도체·AI·에너지 중심으로 사업 포트폴리오 
 " alt="AI Platform" style="border-radius:8px; margin-left:20px;">
   </div>
 
-  <!-- 카드 4: 에너지/배터리 -->
-  <div style="display: flex; align-items: center; justify-content: space-between; background:#f9f9f9; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
-    <div style="flex:1;">
-      <div style="font-size:13px; color:#888; margin-bottom:6px;">리포트</div>
-      <a href="https://research.hanaw.com/SK_Innovation_Refining_20250701.pdf" target="_blank" style="color:#111; font-weight:bold; text-decoration:none;">
-        [하나증권] SK이노베이션 – 정유 수익성 회복과 배터리 사업 분기점 도래
-      </a>
-      <div style="font-size:15px; color:#555; margin-top:4px;">
-        유가 회복과 함께 배터리 부문 수익 전환 기대가 부상합니다.
-      </div>
-    </div>
-    <img src="https://images.unsplash.com/photo-1559100297-a27c0519f7a3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&ixid=M3w3NDE3NjZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NTMwNjE2MTN8&ixlib=rb-4.1.0&q=80&w=80&h=80
-" alt="Energy Battery" style="border-radius:8px; margin-left:20px;">
-  </div>
-
-  <!-- 카드 5: 친환경 소재 -->
-  <div style="display: flex; align-items: center; justify-content: space-between; background:#f9f9f9; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
-    <div style="flex:1;">
-      <div style="font-size:13px; color:#888; margin-bottom:6px;">리포트</div>
-      <a href="https://www.shinhaninvest.com/report/SKC_Growth_20250701.pdf" target="_blank" style="color:#111; font-weight:bold; text-decoration:none;">
-        [신한투자증권] SKC – 친환경 소재 중심 성장 전략 주목
-      </a>
-      <div style="font-size:15px; color:#555; margin-top:4px;">
-        친환경 전자소재·2차전지 소재 확대 중심의 구조적 성장이 기대됩니다.
-      </div>
-    </div>
-    <img src="https://images.unsplash.com/photo-1644191199586-789b1d75c8c9?fit=crop&w=80&h=80" alt="Materials" style="border-radius:8px; margin-left:20px;">
-  </div>
-
 </div>
 
 <br>
@@ -555,34 +648,6 @@ SK그룹 전반은 반도체·AI·에너지 중심으로 사업 포트폴리오 
     <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=80&h=80" alt="AI Data Center" style="border-radius:8px; margin-left:20px;">
   </div>
 
-  <!-- 카드 4: SiC 반도체 기술 협력 -->
-  <div style="display:flex; align-items:center; justify-content:space-between; background:#fafafa; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
-    <div style="flex:1;">
-      <div style="font-size:13px; color:#888; margin-bottom:6px;">산업뉴스</div>
-      <a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=236973" target="_blank" style="text-decoration:none; color:#111; font-weight:bold;">
-        SK Keyfoundry, SiC 반도체 기술 LB Semicon과 공동개발
-      </a>
-      <div style="font-size:15px; color:#555; margin-top:4px;">
-        SK Keyfoundry, 실리콘카바이드 기반 반도체 패키징 혁신 기술 공개.
-      </div>
-    </div>
-    <img src="https://images.unsplash.com/photo-1689852500881-e80588efaed6?fit=crop&w=80&h=80
-" alt="SiC Semiconductor" style="border-radius:8px; margin-left:20px;">
-  </div>
-
-  <!-- 카드 5: SK-E&S 통합 전략 -->
-  <div style="display:flex; align-items:center; justify-content:space-between; background:#fafafa; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
-    <div style="flex:1;">
-      <div style="font-size:13px; color:#888; margin-bottom:6px;">산업뉴스</div>
-      <a href="https://www.chosun.com/english/industry-en/2024/07/21/BCGPVV26PJEKDBCYUWNHYUDNXE/" target="_blank" style="text-decoration:none; color:#111; font-weight:bold;">
-        AI 수요 대응 위해 SK이노베이션·SK E&S 합병 추진
-      </a>
-      <div style="font-size:15px; color:#555; margin-top:4px;">
-        AI 시대 전력 수요 증가 대응…에너지-배터리 사업 통합 전략.
-      </div>
-    </div>
-    <img src="https://images.unsplash.com/photo-1745824569758-5f9f1a3136a5?fit=crop&w=80&h=80" alt="Energy Merger" style="border-radius:8px; margin-left:20px;">
-  </div>
 
 </div>
     
@@ -642,34 +707,6 @@ SK그룹 전반은 반도체·AI·에너지 중심으로 사업 포트폴리오 
       </div>
     </div>
     <img src="https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=80&h=80" alt="Telecom Users" style="border-radius:8px; margin-left:20px;">
-  </div>
-
-  <!-- 카드 4: LG에너지솔루션, 유럽 공장 증설 -->
-  <div style="display:flex; align-items:center; justify-content:space-between; background:#fafafa; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
-    <div style="flex:1;">
-      <div style="font-size:13px; color:#888; margin-bottom:6px;">경쟁사뉴스</div>
-      <a href="https://www.reuters.com/business/autos-transportation/lg-energy-europe-battery-expansion-2025-07-19/" target="_blank" style="text-decoration:none; color:#111; font-weight:bold;">
-        LG에너지솔루션, 유럽 배터리 생산능력 2배 확대
-      </a>
-      <div style="font-size:15px; color:#555; margin-top:4px;">
-        스텔란티스·폭스바겐 등 수요 대응 위해 폴란드 공장 증설…SK온과의 글로벌 경쟁 심화.
-      </div>
-    </div>
-    <img src="https://images.unsplash.com/photo-1559100297-a27c0519f7a3?crop=entropy&fit=crop&w=80&h=80" alt="Battery Expansion" style="border-radius:8px; margin-left:20px;">
-  </div>
-
-  <!-- 카드 5: 삼성, 인텔과 HBM 협력 확대 추진 -->
-  <div style="display:flex; align-items:center; justify-content:space-between; background:#fafafa; border-radius:12px; padding:16px 20px; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
-    <div style="flex:1;">
-      <div style="font-size:13px; color:#888; margin-bottom:6px;">경쟁사뉴스</div>
-      <a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=236973" target="_blank" style="text-decoration:none; color:#111; font-weight:bold;">
-        삼성전자, 인텔과 HBM 협력 강화…AI 시장 대응 본격화
-      </a>
-      <div style="font-size:15px; color:#555; margin-top:4px;">
-        SK하이닉스에 이어 인텔과 HBM3E 공동검증 마쳐, AI 가속기 대응 경쟁력 확대 중.
-      </div>
-    </div>
-    <img src="https://images.unsplash.com/photo-1689852500881-e80588efaed6?fit=crop&w=80&h=80" alt="HBM Intel" style="border-radius:8px; margin-left:20px;">
   </div>
 
 </div>
